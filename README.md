@@ -12,7 +12,7 @@ To download and import csv files (serially, which is good in case of failure) fi
 
 ```python dmr.py --psql```
 
-To download a particular year
+The import is done using `psql -c '\copy` so place the relevant PostgreSQL credentials in [environment variables](http://www.postgresql.org/docs/9.1/static/libpq-envars.html). To download a particular year
 
 ```python dmr.py --year 2015```
 
